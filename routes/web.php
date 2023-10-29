@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [StaticPagesController::class, 'home']);
-Route::get('/about', [StaticPagesController::class, 'about']);
-Route::get('/help', [StaticPagesController::class, 'help']);
+Route::get('/', [StaticPagesController::class, 'home'])->name('home');
+Route::get('/about', [StaticPagesController::class, 'about'])->name('about');
+Route::get('/help', [StaticPagesController::class, 'help'])->name('help');
